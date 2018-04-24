@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Yogdaan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -14,18 +14,13 @@
 
   <style>
     /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-    p {
+
+    .animated-logo p {
       text-transform: uppercase;
       letter-spacing: .5em;
-      display: inline-block;
       border: 4px double rgba(255, 255, 255, 0.25);
       border-width: 4px 0;
       padding: 1.5em 0em;
-      position: absolute;
-      top: 18%;
-      left: 50%;
-      width: 40em;
-      margin: 0 0 0 -20em;
     }
   </style>
 
@@ -34,12 +29,24 @@
 </head>
 
 <body>
+  <!-- Animated Logo -->
+  <section class="animated-logo">
+    <p>
+      <span>
+        Yogdaan
+      </span>
+    </p>
+  </section>
 
-  <p>
-    <span>
-      Yogdaan
-    </span>
-  </p>
+
+  <!-- Bottom bar -->
+  <section class="bottom-bar">
+    <ul>
+      <li><a href="t.me/yogdaan">Telegram</a></li>
+      <li><a href="https://gitter.im/yogdaan/Lobby">Gitter</a></li>
+      <li><a href="https://orgmanager.miguelpiedrafita.com/join/38074740">Github</a></li>
+    </ul>
+  </section>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 

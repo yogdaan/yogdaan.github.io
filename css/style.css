@@ -6,7 +6,10 @@ body {
   margin: 0;
 }
 
-p span {
+.animated-logo {
+  margin: 10% 25% 0% 25%;
+}
+.animated-logo p span {
   font: 700 4em/1 "Oswald", sans-serif;
   letter-spacing: 0;
   padding: .25em 0 .325em;
@@ -33,4 +36,31 @@ p span {
   100% {
     background-position: 100% 50%;
   }
+}
+
+.bottom-bar {
+  margin-top: 20%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.bottom-bar ul {
+  margin: 10% 25% 0 25%;  
+}
+.bottom-bar ul li {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  display: inline-block;
+  margin: 5px;
+}
+
+.bottom-bar ul li a{
+  margin: 5px;
+  color: rgb(185, 175, 175);
+  text-decoration: none;
+}
+
+.bottom-bar ul li a:hover{
+  color: rgb(7, 6, 6);
+  background: white;
+  transition: all 0.3s ease;
 }
