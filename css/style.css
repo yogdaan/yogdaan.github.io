@@ -1,9 +1,14 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
   font: 400 1em/1.5 "Neuton";
   background: #090d00;
   color: rgba(255, 255, 255, 0.25);
   text-align: center;
-  margin: 0;
+  margin: 0 0 50px;
+  padding: 25px;
 }
 
 .animated-logo {
@@ -39,13 +44,20 @@ body {
 }
 
 .bottom-bar {
-  margin-top: 20%;
   font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  background: #white;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+/*  overflow: hidden;*/
 }
 
 .bottom-bar ul {
-  margin: 10% 25% 0 25%;  
+  margin: 0% 25% 0 25%;  
 }
+
 .bottom-bar ul li {
   border-left: 2px solid white;
   border-right: 2px solid white;
