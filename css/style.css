@@ -44,35 +44,113 @@ body {
 }
 
 .bottom-bar {
-  font-family: 'Courier New', Courier, monospace;
   position: absolute;
-  background: #white;
   left: 0;
   bottom: 0;
   height: 50px;
   width: 100%;
-/*  overflow: hidden;*/
 }
 
-.bottom-bar ul {
-  margin: 0% 25% 0 25%;  
+/* helpers/accessibility.css */
+
+.invisible {
+  left: -999px;
+  overflow: hidden;
+  position: absolute;
+  top: -999px;
 }
 
-.bottom-bar ul li {
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+/* helpers/align.css */
+
+.align {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* modules/anchor.css */
+
+a {
+  outline: 0;
+}
+
+/* modules/icon.css */
+
+.icons {
+  display: none;
+}
+
+.icon {
   display: inline-block;
-  margin: 5px;
+  fill: #97adc6;
+  font-size: 16px;
+  font-size: 1rem;
+  height: 1em;
+  vertical-align: middle;
+  width: 1em;
 }
 
-.bottom-bar ul li a{
-  margin: 5px;
-  color: rgb(185, 175, 175);
+.icon--2x {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+/* modules/image.css */
+
+svg {
+  max-width: 100%;
+}
+
+/* modules/navigation.css */
+
+.navigation {
+  background-color: #f0f6ff;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 24px;
+  padding: 1.5rem;
+  position: relative;
   text-decoration: none;
 }
 
-.bottom-bar ul li a:hover{
-  color: rgb(7, 6, 6);
-  background: white;
-  transition: all 0.3s ease;
+.navigation a:focus::after,
+.navigation a:hover::after {
+  opacity: 1;
+}
+
+.navigation a::after {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  width: 100%;
+}
+
+.navigation--inline ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
