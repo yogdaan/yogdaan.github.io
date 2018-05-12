@@ -110,7 +110,7 @@ svg {
 /* modules/navigation.css */
 
 .navigation {
-  background-color: #f0f6ff;
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 0.25rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
@@ -154,3 +154,16 @@ svg {
   display: -ms-flexbox;
   display: flex;
 }
+.Telegram:hover svg {
+  fill: #0088cc
+}
+.Gitter:hover svg {
+  fill: #ed1965
+}
+.Github:hover svg {
+  fill: #000000
+}
+.Join:hover svg {
+  fill: #0078D7
+}
+
