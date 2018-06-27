@@ -101,69 +101,46 @@ a {
   font-size: 2rem;
 }
 
-/* modules/image.css */
+ul{
+  list-style-type: none;
 
-svg {
-  max-width: 100%;
 }
-
-/* modules/navigation.css */
-
-.navigation {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 0.25rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
+ul li {
+  display: inline;
+  font-size: 200%;
+  padding:2vw;
+  
 }
-
-.navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+i{
+  color:white;
+  transition: all .2s ease-in-out;
 }
 
-.navigation a {
-  display: block;
-  padding: 24px;
-  padding: 1.5rem;
-  position: relative;
-  text-decoration: none;
+#telegram:hover{
+  
+  color: #0088cc;
+  border-radius: 49%;
+  background-color: white;
+  transform: scale(1.5);
 }
 
-.navigation a:focus::after,
-.navigation a:hover::after {
-  opacity: 1;
+#gitter:hover{
+  
+  color: #f4015e;
+
+  transform: scale(1.5);
 }
 
-.navigation a::after {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
-  content: '';
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  width: 100%;
+#github:hover{
+  
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  transform: scale(1.5);
 }
 
-.navigation--inline ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#biz:hover{
+  
+  color: white;
+  transform: scale(1.5);
 }
-.Telegram:hover svg {
-  fill: #0088cc
-}
-.Gitter:hover svg {
-  fill: #ed1965
-}
-.Github:hover svg {
-  fill: #000000
-}
-.Join:hover svg {
-  fill: #0078D7
-}
-
