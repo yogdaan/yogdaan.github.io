@@ -12,7 +12,7 @@ body {
 }
 
 .animated-logo {
-  margin: 10% 25% 0% 25%;
+  margin: 10% 25% 0 25%;
   font-size: 1em;
 }
 .animated-logo p span {
@@ -23,13 +23,11 @@ body {
   margin: 0 auto;
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
   /* Clip Background Image */
+  color:rgba(255,255,255,0.1);
   background: url(https://i.imgur.com/9nKeCKC.png) repeat-y;
   -webkit-background-clip: text;
-  background-clip: text;
-  /* Animate Background Image */
   -webkit-text-fill-color: transparent;
   -webkit-animation: aitf 80s linear infinite;
-  /* Activate hardware acceleration for smoother animations */
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
 }
@@ -37,7 +35,7 @@ body {
 /* Animate Background Image */
 @-webkit-keyframes aitf {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   100% {
     background-position: 100% 50%;
@@ -90,7 +88,6 @@ a {
 .icon {
   display: inline-block;
   fill: #97adc6;
-  font-size: 16px;
   font-size: 1rem;
   height: 1em;
   vertical-align: middle;
@@ -98,7 +95,6 @@ a {
 }
 
 .icon--2x {
-  font-size: 32px;
   font-size: 2rem;
 }
 
@@ -125,7 +121,6 @@ svg {
 
 .navigation a {
   display: block;
-  padding: 24px;
   padding: 1.5rem;
   position: relative;
   text-decoration: none;
@@ -173,6 +168,14 @@ svg {
     font-size: .8em;
     margin: 20%;
   }
+  .animated-logo p span {
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(https://i.imgur.com/9nKeCKC.png) repeat-y;
+    -webkit-background-clip: text;
+  }
+
   .bottom-bar{
     height: 20px;
     margin-bottom: 10%;
