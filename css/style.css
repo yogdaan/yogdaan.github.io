@@ -11,6 +11,10 @@ body {
   padding: 25px;
 }
 
+#bio{
+  font-size: 2em;
+  margin: 100px 50px 20px 50px;
+}
 .animated-logo {
   margin: 10% 25% 0% 25%;
   font-size: 1em;
@@ -175,6 +179,11 @@ svg {
   }
   .bottom-bar{
     height: 20px;
+    margin-top : 40px;
     margin-bottom: 10%;
+    position: relative;
+  }
+  #bio{
+    margin: 20px;
   }
 }
